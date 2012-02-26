@@ -1,0 +1,12 @@
+def my_if(condiction, then_clause, else_clause) 
+    if condiction
+        then_clause.call
+    else
+        else_clause.call
+    end
+end
+5.times do |val|
+    my_if val < 3, 
+        -> { puts "#{val} is small"},
+        -> { puts "#{val} is small"}
+end

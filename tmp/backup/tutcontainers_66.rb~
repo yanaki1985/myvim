@@ -1,0 +1,9 @@
+proc1 = lambda do |a, *b, &block|
+
+end
+def name
+    
+end
+class   name1
+    fdasf
+end

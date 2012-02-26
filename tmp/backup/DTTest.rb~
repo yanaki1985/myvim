@@ -1,0 +1,6 @@
+class DTTest
+
+  def add_one(s, one) 
+    s << one
+  end
+end

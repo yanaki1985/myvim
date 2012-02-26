@@ -1,0 +1,7 @@
+class String
+  def titleize
+    self.gsub(/\s\w/) { |letter| letter.upcase}
+  end
+end
+
+puts "We're testing titleize".titleize

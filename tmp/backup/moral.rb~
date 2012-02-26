@@ -1,0 +1,8 @@
+module Moral
+  VERY_BAD = 1
+  BAD = 1
+
+  def Moral.sin(badness)
+    
+  end
+end

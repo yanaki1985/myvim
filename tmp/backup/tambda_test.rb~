@@ -1,0 +1,2 @@
+to_screen = lambda { |x| puts x}
+to_screen.call(100)

@@ -1,0 +1,9 @@
+<%= link_to "<<Back to index", :url => {:action => 'index'}, :class => 'back link' %>
+<div>
+  <%= form_for @subject, :url => {:action => 'create'}, :class => 'show crate' do |f| -%>
+  <%= render :partial => 'form', :locals => { :f => f } %>
+    <div>
+      <%= f.submit "Create Product" %>
+    </div>
+    <% end -%>
+</div>

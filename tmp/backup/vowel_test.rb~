@@ -1,0 +1,6 @@
+require_relative 'string_extension'
+
+puts "This is a test".vowels.join('-')
+
+load 'string_extension.rb'
+puts "This is a test".vowels.join('-')

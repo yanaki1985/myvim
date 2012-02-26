@@ -1,0 +1,6 @@
+class SectionsController < ApplicationController
+
+  def list
+    @subjects = Subject.order(subjects.position ACS)   
+  end
+end

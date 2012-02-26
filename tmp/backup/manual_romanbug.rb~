@@ -1,0 +1,6 @@
+require_relative 'romanbug'
+
+r = Roman.new(1)
+faild "'i' expected" unless r.to_s == "i"
+
+

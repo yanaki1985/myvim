@@ -1,0 +1,6 @@
+stopworks = %w{the a by on for of are with just but and to the my I has some in}
+lines = File.readlines(ARGV[0])
+lines_count = lines.size
+text = lines.join
+
+puts text

@@ -1,0 +1,4 @@
+lines = File.readlines("text.txt")
+line_count = lines.size
+text = lines.join
+total_characters_nospaces = text.gsub(/\s+/, '').length

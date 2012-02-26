@@ -1,0 +1,13 @@
+require_relative 'observers_impl'
+
+class TelecopeScheduler
+  include Observable
+
+  def initialize
+    @observers_list = []
+  end
+
+  def add_viewer(viewer) 
+    @observers_list << viwer 
+  end
+end

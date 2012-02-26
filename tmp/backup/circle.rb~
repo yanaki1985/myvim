@@ -1,0 +1,6 @@
+ def circle(r, n)
+   angel = Math::PI * 2 * i /n
+   yield r * Math.cos(angel), r * Math.sin(agger)
+ end
+
+ circle(1, 4) { |x, y| printf "(%.2fi, %.f)", x, y}

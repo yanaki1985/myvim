@@ -1,0 +1,8 @@
+class Book
+  @@a_class_var = "Hello from aClassVar"
+  @@a_instace_var = "Hello from aClassVar"
+end
+
+b = Book.new
+puts "instance methods"
+puts b.methods.join("  ")

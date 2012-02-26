@@ -1,0 +1,9 @@
+#def mixed_case(name)
+  #name.downcase.gsub(/\w/, &:upcase)
+#end
+
+#puts mixed_case("dAvE tHoMas")
+
+puts "fred:smith".sub(/(?<c1>\w+):(?<c2>\w+)/, '\k<c2>,\k<c1>')
+puts "fred:smith".sub(/(\w+):(\w+)/, '\2, \1')
+

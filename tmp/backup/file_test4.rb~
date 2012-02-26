@@ -1,0 +1,10 @@
+lines = File.readlines("text.txt")
+line_count = lines.size
+text = lines.join
+word_count = text.split.length
+puts chracter_count = text.length
+chracter_count_nospaces = text.gsub(/\s+/, '').length
+chracter_count = text.split(/\n\n/).length
+sentence_count = text.split(/\.|\?|!/).length
+
+

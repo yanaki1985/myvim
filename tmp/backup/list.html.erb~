@@ -1,0 +1,30 @@
+<div class="subject list">
+  <h2>Subject</h2>
+
+  <%= link_to "Add New Subject", {:acton => 'new', :class => 'action new'} %>
+  
+  <table border="1" summary="Subject list">
+    <tr class="heder">
+      <th>&nbsp;</th>
+      <th>Nmae</th>
+      <th>Postition</th>
+      <th>Visionble</th>
+      <th>Pages</th>
+      <th>Actions</th>
+    </tr>
+      <% @subjects.each do |subject| -%>
+      <tr>
+        <td><%= subject.name %></td>
+        <td><%= subject.position %></td>
+        <td><%= subject.visible ? 'Yes' : 'No' %></td>
+        <td><%= subject.pages.size %></td>
+        <td>
+          <%= link_to "Show", {:acton => 'show', :id => subject.id}, :class => 'action show' %>
+          <%= link_to "edit", {:acton => 'edit', :id => subject.id}, :class => 'action edit' %>
+          <%= link_to "Show", {:acton => 'delete', :id => subject.id}, :class => 'action delete' %>
+        </td>
+      </tr>
+      <% end -%>
+
+  </table>
+</div>

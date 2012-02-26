@@ -1,0 +1,15 @@
+<%= link_to "<< Back index", :url => {:action => 'index'}, :class => 'back-link'%>
+
+<div>
+  <h2>Delete Subject</h2>
+  <%= form_for @Subject, :url => {:action => 'destroy', :id => @subject.id} do |f| -%>
+  <p>Are you user delete?</p>
+    
+  <p><%= @subject.name %></p>
+
+  <div>
+    <%= f.submit "Delete Subject" %>
+  </div>
+  <% end -%>
+  
+</div>

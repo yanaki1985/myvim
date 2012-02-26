@@ -1,0 +1,11 @@
+
+array.collect do |x|
+  next 0 if x == nil
+  next x, x * x
+end
+
+begin
+  
+rescue Exception => e
+end
+

@@ -1,0 +1,4 @@
+class SectionEdit < ActiveRecord::Base
+  belongs_to :editor, class_name: "admin_user"
+  belongs_to :setion
+end

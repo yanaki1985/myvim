@@ -1,0 +1,12 @@
+class Fixnum
+  alias old_plus +
+
+    def +(other)
+      old_plus(other).succ
+    end
+end
+
+1 + 2
+puts a = 3
+puts a += 4
+puts a + a + a

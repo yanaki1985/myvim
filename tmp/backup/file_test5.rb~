@@ -1,0 +1,7 @@
+class MyFile
+  attr_reader :handle
+
+  def initialize(filen)
+    
+  end
+end

@@ -1,0 +1,5 @@
+def ("/etc/passwd") do |line|
+  next if line =~ /^#/
+    parse(line) unless line =~ /^$/
+end
+jfdsafdasf,p

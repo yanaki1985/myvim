@@ -1,0 +1,7 @@
+  def splict_apart(fifst, *splat, last  )
+    puts "First: #{first.inspect}, splat: #{splat.inspect}" + "last: #{last.inspect}"
+  end
+
+  splict_apart(1, 2)
+  splict_apart(1, 2, 3)
+  splict_apart(1, 2, 3, 4)

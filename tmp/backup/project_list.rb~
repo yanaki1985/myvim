@@ -1,0 +1,20 @@
+class ProjectList
+  def inilialize
+    @projects = []
+  end
+
+  def projects=(list)
+    @projects = list.map(&:upcase)
+  end
+
+  def [](offset)
+    @projects[offset]
+  end
+end
+
+kjkkkk
+list = ProjectList.new
+list.projects = %w{ strip sand prime sand paint sand paint rub paint}
+
+list[3]
+list[4]

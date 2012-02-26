@@ -1,0 +1,77 @@
+def show_regexp(string, pattern)
+  match = pattern.match(string)
+
+  if match
+    "#{match.pre_match}->#{match[0]}<-#{match.post_match}"
+  else
+    "no match"
+  end
+end
+
+#puts show_regexp('very interesting', /t/)
+#puts show_regexp('Fats Waller', /a/)
+#puts show_regexp('Fats Waller', /lle/)
+#puts show_regexp('Fats Waller', /z/)
+#
+#puts show_regexp('yes | no', /\|/)
+#puts show_regexp('yes (no)', /\(no\)/)
+#puts show_regexp('are you sure?', /e\?/)
+#
+#str = "this is\nthe time"
+#puts show_regexp(str, /^the/)
+#puts show_regexp(str, /is$/)
+#puts show_regexp(str, /\Athis/)
+#puts show_regexp(str, /\Athe/)
+#
+#str = 'Price $12'
+#puts show_regexp(str, /[aeiou]/)
+#puts show_regexp(str, /[\s]/)
+#puts show_regexp(str, /[$.]/)
+#puts show_regexp(str, /[^A-Z]/)
+#puts show_regexp(str, /[^\w]/)
+#puts show_regexp(str, /[a-z][^a-z]/)
+#puts show_regexp(str, /[aeiou]/)
+#puts show_regexp(str, /[[:digit:]]/)
+#puts show_regexp(str, /[[:space:]]/)
+#puts show_regexp(str, /[[:^alpha:]]/)
+#puts show_regexp(str, /[[:punct:]aeiou]/)
+#
+#a = 'see [The PickAxe-page 123]'
+#puts show_regexp(a, /[\]]/)
+#puts show_regexp(a, /[0-9\]]/)
+#puts show_regexp(a, /[\d\-]/)
+
+#str1 = "Anow is the time"
+#puts str1.gsub(/[a-z&&[^aeiou]]/, '*')
+#
+#a = "red ball blue sky"
+#puts show_regexp(a, /d|e/)
+#puts show_regexp(a, /al|lu/)
+#puts show_regexp(a, /red ball|angry sk0/)
+#
+#puts show_regexp('banana', /an+/)
+#puts show_regexp('banana', /(an)+/)
+#
+#a = 'red ball blue sky'
+#puts show_regexp(a, /blue|red/)
+#puts show_regexp(a, /(blue|red) \w+/)
+#puts show_regexp(a, /(red|blue) \w+/ )
+#puts show_regexp(a, /redd|blue \w+/)
+#puts show_regexp(a, /red (ball|angry) sky/)
+#a = 'the red angry sky'
+#puts show_regexp(a, /red (ball|angry) sky/)
+#
+#md = /(\d\d):(\d\d)(..)/.match("12:50am")
+#puts "Hour is #{md[1]}, minute #{md[2]}"
+#md = /((\d\d):(\d\d)) (..)/.match("12:50am")
+#puts "Time is #{md[1]}"
+#puts "Time is #{md[2]}, minute #{md[3]}"
+#puts "AM/PM is #{md[4]}"
+#  
+#str = 'He said "Hello"'
+#puts show_regexp(str, /(?<char>\w)\k<char>/)
+
+#
+a = "quick brown fox"
+a.sub(/^./) {|match| match.upcase}
+a.gsub(/[aeiou]/) {|vowel| vowel.upcase}

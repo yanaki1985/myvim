@@ -1,0 +1,6 @@
+proc2 = -> a, *b &block do
+  puts "a = #{a.inspect}"
+  puts "b = #{a.inspect}"
+  block.call
+end
+

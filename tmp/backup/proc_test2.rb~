@@ -1,0 +1,9 @@
+def n_times(thing)
+  lambda {|n| thing * n }
+end
+
+p1 = n_times(23)
+p1.call(3)
+p2.call(4)
+p2 = n_times("Hello")
+p2.call(3)

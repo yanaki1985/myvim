@@ -1,0 +1,4 @@
+require 'net/http'
+
+url = URI.parse('http://www.rubyinside.com/')
+Net::HTTP.get_print('www.rubyinside.com', '/')

@@ -1,0 +1,28 @@
+<%= link_to "<< Back to index", {:action => 'index'}, :class => 'back-link'%>
+
+<div>
+  <h2>Show Subject</h2>
+
+  <table border="0">
+    <tr>
+      <th>Position</th>
+      <td><%= @subject.position %></td>
+    </tr>
+    <tr>
+      <th>Nmae</th>
+      <td><%= @subject.name %></td>
+    </tr>
+    <tr>
+      <th>visible</th>
+      <td><%= @subject.visible %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td>created_at</td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @subject.updated_at %></td>
+    </tr>
+  </table>
+</div>

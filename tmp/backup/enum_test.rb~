@@ -1,0 +1,4 @@
+s = 'hello'
+puts s.enum_for(:each_char).map { |c| c.succ}
+puts "hello".chars.map { |c| c.succ}
+
